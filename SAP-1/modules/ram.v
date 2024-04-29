@@ -1,6 +1,5 @@
 module ram(
     input clk_i, 
-    input rstn_i, 
 
     input[3:0] addr_i, 
 
@@ -8,5 +7,8 @@ module ram(
 
 reg[7:0] mem[0:15]; 
 
+always @ (posedge clk_i) begin
+    data_o <= mem[addr_i];
+end
 
 endmodule
