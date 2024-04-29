@@ -1,3 +1,4 @@
+// Took that from the other tuto on this other website (https://austinmorlan.com/posts/fpga_computer_sap1/). Not particulrlaly useful in that case but you never know
 module clock(
 	input hlt_i,
 	input clk_i,
