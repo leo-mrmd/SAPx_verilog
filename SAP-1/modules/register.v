@@ -1,4 +1,4 @@
-// General purpose register, intend to use for both accumulator A and B register and instruction register
+// General purpose register, intend to use for accumulator A,B register, instruction register and output register
 module register(
     input clk_i,
     input rstn_i,
@@ -7,7 +7,7 @@ module register(
     input[7:0] bus_i,
 
     output[7:0] bus_o, 
-    output[7:0] add_sub_o);
+    output[7:0] parallel_o);
 
 regr[7:0] registe; // Need to find a better name 
 
@@ -19,7 +19,7 @@ always @ (posedge clk_i, negedge rstn_i) begin
     end
 end
 
-assign bus_o     = register;
-assign add_sub_o = register;
+assign bus_o      = register;
+assign parallel_o = register;
 
 endmodule
