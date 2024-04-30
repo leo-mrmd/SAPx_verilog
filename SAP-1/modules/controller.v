@@ -2,9 +2,9 @@ module controller(
     input clk_i, 
     input rstn_i, 
 
-    input[4:0] opcode,
+    input[3:0] opcode,
 
-    output hlt_o,
+    output hltn_o,
     output[11:0] ctrl_word);
 
 
@@ -60,7 +60,7 @@ always @ (*) begin
         ctrl_word[B_REG_LOAD]   = 1'b1;
         ctrl_word[OUT_REG_LOAD] = 1'b1;
 
-        hlt_o                   = 1'b1;
+        hltn_o                   = 1'b1;
     else begin
         case (state)
             1:begin // Adress state
@@ -116,7 +116,7 @@ always @ (*) begin
                         ctrl_word[RAM_EN]       = 1'b1;
                         ctrl_word[INSTR_LOAD]   = 1'b1;
                         // Now the useful stuff
-                        hlt_o                   = 1'b0;
+                        hltn_o                   = 1'b0;
                     end
                 endcase
             end

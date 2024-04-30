@@ -4,7 +4,7 @@ module pc(
 
     input inc_i,
 
-    output[4:0] pc_o);
+    output[3:0] pc_o);
 
 
 always @ (negedge clk_i, negedge rstn_i) begin
