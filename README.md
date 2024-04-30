@@ -9,3 +9,11 @@ Verilog files for SAP-1, SAP-2, and SAP-3 architectures. Nothing fancy, just an 
 Deported all the ENABLE signals to the bus controller (tri state being impossible for internal signals). The LOAD / LATCH signals are on each components.
 
 A, B, instr and ouput regs are done with same component.
+
+## Controller
+
+![1714493349375](image/README/1714493349375.png)
+
+![1714493602080](image/README/1714493602080.png)
+
+![1714494379058](image/README/1714494379058.png)
