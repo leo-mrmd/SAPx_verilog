@@ -14,26 +14,27 @@ module bus_controller(
     input add_sub_en_i,
 
     // Bus outputs
-    output[4:0] mar_o,
+    output[3:0] mar_o,
     output[7:0] instr_o,
     output[7:0] a_acc_o,
     output[7:0] b_reg_o,
     output[7:0] out_reg_o);
 
 reg[7:0] bus;
+wire write_conflict;
 
 always @ (*) begin
     if (pc_en_i) begin
         bus[3:0] = pc_i;
-    else if (ram_en_i)
+    end else if (!ram_en_i) begin
         bus = ram_i;
-    else if (instr_en_i)
+    end else if (!instr_en_i) begin
         bus[3:0] = instr_i;
-    else if (a_acc_en_i)
+    end else if (a_acc_en_i) begin
         bus = a_acc_i;
-    else if (add_sub_en_i)
+    end else if (add_sub_en_i) begin
         bus = add_sub_i;
-    else
+    end else begin
         bus = 8'b0;
     end
 end

@@ -1,0 +1,4 @@
+Running: xsim.dir/sap1_bench_behav/xsimk -simmode gui -wdb sap1_bench_behav.wdb -simrunnum 0 -socket 39281
+Design successfully loaded
+Design Loading Memory Usage: 29164 KB (Peak: 29800 KB)
+Design Loading CPU Usage: 30 ms

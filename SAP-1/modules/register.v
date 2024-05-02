@@ -9,7 +9,7 @@ module register(
     output[7:0] bus_o, 
     output[7:0] parallel_o);
 
-regr[7:0] registe; // Need to find a better name 
+reg[7:0] register; // Need to find a better name 
 
 always @ (posedge clk_i, negedge rstn_i) begin
     if (!rstn_i)
@@ -19,7 +19,7 @@ always @ (posedge clk_i, negedge rstn_i) begin
     end
 end
 
-assign bus_o      = register;
-assign parallel_o = register;
+assign bus_o     [3:0] = register[4:0]; assign bus_o     [7:4] = 4'b0000;
+assign parallel_o[7:4] = register[7:4]; assign parallel_o[7:4] = 4'b0000;
 
 endmodule

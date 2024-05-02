@@ -8,16 +8,19 @@ module add_sub(
     
     output[7:0] bus_o);
 
-reg[7:0] res_r; // register stage added for metastability 
+wire[7:0] res_r; // register stage added for metastability 
 assign   res_r = sub_en_i ? (a_i-b_i) : (a_i+b_i); // assign out = condition ? val_if_true : val_if_false
 
+reg[7:0] bus_r;
 
 always @ (posedge clk_i, negedge rstn_i) begin
-    if (rstn_i)
-        bus_o <= 8'b0;
+    if (!rstn_i)
+        bus_r <= 8'b0;
     else begin
-        bus_o <= res_r;
+        bus_r <= res_r;
     end
 end
+
+assign bus_o = bus_r;
 
 endmodule

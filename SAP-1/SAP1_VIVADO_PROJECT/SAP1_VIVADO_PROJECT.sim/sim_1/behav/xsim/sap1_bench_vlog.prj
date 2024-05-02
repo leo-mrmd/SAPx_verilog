@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../modules/add_sub.v" \
+"../../../../../modules/bus_controller.v" \
+"../../../../../modules/clock.v" \
+"../../../../../modules/controller.v" \
+"../../../../../modules/mar.v" \
+"../../../../../modules/pc.v" \
+"../../../../../modules/ram.v" \
+"../../../../../modules/register.v" \
+"../../../../../top/sap1.v" \
+"../../../../SAP1_VIVADO_PROJECT.srcs/sim_1/new/sap1_bench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
