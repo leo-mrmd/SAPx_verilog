@@ -36,7 +36,7 @@ wire[3:0]  opcode;
 wire       hltn;
 wire[11:0] ctrl_word;
 
-assign opcode = instr_to_ctrl[3:0];
+assign opcode = instr_to_ctrl[7:4];
 
 // A accumulator signals
 wire      ld_a;
@@ -94,7 +94,6 @@ mar mar_inst_0 ( .clk_i  (clk1),
                  .addr_o (mar_to_ram));
 
 ram ram_inst_0 ( .clk_i  (clk1),
-                 .cen_i  (ram_en),
                  .addr_i (mar_to_ram),
                  .data_o (ram_to_bus));
                 
