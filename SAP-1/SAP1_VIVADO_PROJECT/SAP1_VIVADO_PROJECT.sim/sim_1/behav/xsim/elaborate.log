@@ -5,12 +5,8 @@ Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 1 for port 'binary_o' [/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/SAP1_VIVADO_PROJECT/SAP1_VIVADO_PROJECT.srcs/sim_1/new/sap1_bench.v:9]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'a_i' [/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/top/sap1.v:122]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'b_i' [/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/top/sap1.v:123]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'bus_o' [/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/top/sap1.v:125]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'add_sub_i' [/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/top/sap1.v:142]
-WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 4 for port 'instr_i' [/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/top/sap1.v:144]
-WARNING: [VRFC 10-5021] port 'cen_i' is not connected on this instance [/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/top/sap1.v:96]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 4 for port 'instr_i' [/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/top/sap1.v:145]
+WARNING: [VRFC 10-5021] port 'cen_i' is not connected on this instance [/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/top/sap1.v:97]
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4099] "/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/top/sap1.v" Line 1. Module sap1_top doesn't have a timescale but at least one module in design has a timescale.

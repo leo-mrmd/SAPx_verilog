@@ -19,7 +19,8 @@ always @ (posedge clk_i, negedge rstn_i) begin
     end
 end
 
+
 assign bus_o      = register;
-assign parallel_o = register; 
+assign parallel_o = register;
 
 endmodule

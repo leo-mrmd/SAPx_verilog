@@ -52,7 +52,8 @@ wire[7:0] b_to_bus;
 wire[7:0] a_to_add;
 wire[7:0] b_to_add;
 wire      sub_en;
-wire      add_to_bus;
+wire[7:0] add_to_bus;
+
 
 // Output register signals
 wire      ld_out;
@@ -119,8 +120,8 @@ register acc_inst_0 ( .clk_i      (clk1),
 
 add_sub add_sub_inst_0 ( .clk_i    (clk1),
                          .rstn_i   (rstn),
-                         .a_i      (a_i),
-                         .b_i      (b_i),
+                         .a_i      (a_to_add),
+                         .b_i      (b_to_add),
                          .sub_en_i (sub_en),
                          .bus_o    (add_to_bus));
 

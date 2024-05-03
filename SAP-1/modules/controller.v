@@ -22,7 +22,7 @@ localparam INSTR_LOAD   = 4;
 localparam INSTR_EN     = 5;
 localparam A_ACC_LOAD   = 6;
 localparam A_ACC_EN     = 7;
-localparam ADD_SUB_LOAD = 8;
+localparam SUB_EN       = 8;
 localparam ADD_SUB_EN   = 9;
 localparam B_REG_LOAD   = 10;
 localparam OUT_REG_LOAD = 11;
@@ -58,7 +58,7 @@ always @ (*) begin
         ctrl_word[INSTR_EN]     = 1'b1;
         ctrl_word[A_ACC_LOAD]   = 1'b1;
         ctrl_word[A_ACC_EN]     = 1'b0;
-        ctrl_word[ADD_SUB_LOAD] = 1'b0;
+        ctrl_word[SUB_EN]       = 1'b0;
         ctrl_word[ADD_SUB_EN]   = 1'b0;
         ctrl_word[B_REG_LOAD]   = 1'b1;
         ctrl_word[OUT_REG_LOAD] = 1'b1;
@@ -69,6 +69,9 @@ always @ (*) begin
             6'b000001:begin // Adress state
                 ctrl_word[PC_EN]        = 1'b1;
                 ctrl_word[MAR_LOAD]     = 1'b0;
+                ctrl_word[A_ACC_LOAD]   = 1'b1;
+                ctrl_word[ADD_SUB_EN]   = 1'b0;
+                ctrl_word[SUB_EN]       = 1'b0;
             end
             6'b000010:begin // Increment state
                 ctrl_word[INCR_PC]      = 1'b1;
@@ -174,7 +177,7 @@ always @ (*) begin
                             ctrl_word[RAM_EN]       = 1'b1;
                             ctrl_word[B_REG_LOAD]   = 1'b1;
                         // Now the usefull stuff
-                            ctrl_word[ADD_SUB_LOAD] = 1'b1;
+                            ctrl_word[ADD_SUB_EN]   = 1'b1;
                             ctrl_word[A_ACC_LOAD]   = 1'b0;
                     end
                     OP_SUB:begin
@@ -182,8 +185,8 @@ always @ (*) begin
                             ctrl_word[RAM_EN]       = 1'b1;
                             ctrl_word[B_REG_LOAD]   = 1'b1;
                         // Now the usefull stuff
-                            ctrl_word[ADD_SUB_LOAD] = 1'b1;
                             ctrl_word[ADD_SUB_EN]   = 1'b1;
+                            ctrl_word[SUB_EN]       = 1'b1;
                             ctrl_word[A_ACC_LOAD]   = 1'b0;
                     end
                     OP_OUT:begin
@@ -203,7 +206,7 @@ always @ (*) begin
                 ctrl_word[INSTR_EN]     = 1'b1;
                 ctrl_word[A_ACC_LOAD]   = 1'b1;
                 ctrl_word[A_ACC_EN]     = 1'b0;
-                ctrl_word[ADD_SUB_LOAD] = 1'b0;
+                ctrl_word[SUB_EN]       = 1'b0;
                 ctrl_word[ADD_SUB_EN]   = 1'b0;
                 ctrl_word[B_REG_LOAD]   = 1'b1;
                 ctrl_word[OUT_REG_LOAD] = 1'b1;
