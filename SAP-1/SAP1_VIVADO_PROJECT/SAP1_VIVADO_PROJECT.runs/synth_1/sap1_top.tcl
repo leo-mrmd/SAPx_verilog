@@ -110,6 +110,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental /home/leo_mrmd/Documents/SAPx_verilog/SAP-1/SAP1_VIVADO_PROJECT/SAP1_VIVADO_PROJECT.srcs/utils_1/imports/synth_1/sap1_top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

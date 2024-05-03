@@ -1,0 +1,98 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Sat May  4 00:12:50 2024
+| Host         : leo-mrmd-ThinkPad-L13 running 64-bit Ubuntu 22.04.4 LTS
+| Command      : report_control_sets -verbose -file sap1_top_control_sets_placed.rpt
+| Design       : sap1_top
+| Device       : xc7z010
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   104 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    20 |
+| >= 0 to < 4        |    13 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     0 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            1 |
+| No           | No                    | Yes                    |               6 |            2 |
+| No           | Yes                   | No                     |              13 |           12 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              33 |           10 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+------------------------------------------+--------------------------+------------------+----------------+--------------+
+|              Clock Signal              |               Enable Signal              |     Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------+------------------------------------------+--------------------------+------------------+----------------+--------------+
+|  controller_inst_0/ctrl_word__0_0[3]   |                                          | controller_inst_0/rstn_i |                1 |              1 |         1.00 |
+|  controller_inst_0/hltn_1              |                                          | controller_inst_0/rstn_i |                1 |              1 |         1.00 |
+|  controller_inst_0/ctrl_word__0_0[6]   |                                          | controller_inst_0/rstn_i |                1 |              1 |         1.00 |
+|  instr_reg_inst_0/register_reg[4]_1[0] |                                          | controller_inst_0/rstn_i |                1 |              1 |         1.00 |
+|  instr_reg_inst_0/register_reg[4]_1[1] |                                          | controller_inst_0/rstn_i |                1 |              1 |         1.00 |
+|  instr_reg_inst_0/register_reg[4]_1[2] |                                          | controller_inst_0/rstn_i |                1 |              1 |         1.00 |
+|  clk1_BUFG                             | controller_inst_0/ctrl_word_reg[11]_0    | controller_inst_0/rstn_i |                1 |              1 |         1.00 |
+|  instr_reg_inst_0/register_reg[4]_1[3] |                                          | controller_inst_0/rstn_i |                1 |              1 |         1.00 |
+|  controller_inst_0/ctrl_word__0_0[5]   |                                          | controller_inst_0/rstn_i |                1 |              1 |         1.00 |
+|  controller_inst_0/ctrl_word__0_0[2]   |                                          | controller_inst_0/rstn_i |                1 |              1 |         1.00 |
+|  controller_inst_0/ctrl_word__0_0[1]   |                                          | controller_inst_0/rstn_i |                1 |              1 |         1.00 |
+|  controller_inst_0/ctrl_word__0_0[0]   |                                          | controller_inst_0/rstn_i |                1 |              1 |         1.00 |
+|  instr_reg_inst_0/register_reg[4]_1[4] |                                          | controller_inst_0/rstn_i |                1 |              2 |         2.00 |
+|  controller_inst_0/E[0]                |                                          |                          |                1 |              4 |         4.00 |
+|  clk1_BUFG                             | controller_inst_0/ctrl_word_reg[2]_0[0]  | controller_inst_0/rstn_i |                1 |              4 |         4.00 |
+| ~clk1_BUFG                             | controller_inst_0/state_reg[5]_0[0]      | controller_inst_0/rstn_i |                1 |              4 |         4.00 |
+| ~clk1_BUFG                             |                                          | controller_inst_0/rstn_i |                2 |              6 |         3.00 |
+|  clk1_BUFG                             | controller_inst_0/ctrl_word_reg[6]_0[0]  | controller_inst_0/rstn_i |                3 |              8 |         2.67 |
+|  clk1_BUFG                             | controller_inst_0/ctrl_word_reg[10]_0[0] | controller_inst_0/rstn_i |                2 |              8 |         4.00 |
+|  clk1_BUFG                             | controller_inst_0/ctrl_word_reg[4]_0[0]  | controller_inst_0/rstn_i |                2 |              8 |         4.00 |
++----------------------------------------+------------------------------------------+--------------------------+------------------+----------------+--------------+
+
+
