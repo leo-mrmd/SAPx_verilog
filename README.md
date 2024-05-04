@@ -17,3 +17,10 @@ A, B, instr and ouput regs are done with same component.
 ![1714493602080](image/README/1714493602080.png)
 
 ![1714494379058](image/README/1714494379058.png)
+
+
+# SAP-2
+
+![1714810453500](image/README/1714810453500.png)
+
+![1714811386133](image/README/1714811386133.png)
