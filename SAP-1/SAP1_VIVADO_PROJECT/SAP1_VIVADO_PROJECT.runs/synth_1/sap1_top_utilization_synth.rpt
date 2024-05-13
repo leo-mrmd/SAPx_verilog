@@ -1,14 +1,14 @@
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-| Date         : Sat May  4 00:11:27 2024
-| Host         : leo-mrmd-ThinkPad-L13 running 64-bit Ubuntu 22.04.4 LTS
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Mon May 13 23:53:38 2024
+| Host         : leo-mrmd-tp-l380 running 64-bit Ubuntu 24.04 LTS
 | Command      : report_utilization -file sap1_top_utilization_synth.rpt -pb sap1_top_utilization_synth.pb
 | Design       : sap1_top
 | Device       : xc7z010clg400-1
 | Speed File   : -1
 | Design State : Synthesized
------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 Utilization Design Information
 
