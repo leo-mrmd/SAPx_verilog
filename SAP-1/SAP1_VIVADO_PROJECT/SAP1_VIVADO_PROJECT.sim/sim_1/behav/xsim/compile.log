@@ -18,5 +18,3 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "/home/leo_mrmd/Documents/SAPx_veril
 INFO: [VRFC 10-311] analyzing module sap1_top
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/SAP1_VIVADO_PROJECT/SAP1_VIVADO_PROJECT.srcs/sim_1/new/sap1_bench.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sap1_bench
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/SAP1_VIVADO_PROJECT/SAP1_VIVADO_PROJECT.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

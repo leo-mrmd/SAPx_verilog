@@ -5,7 +5,7 @@ Oct 13 2023
 /home/leo_mrmd/Documents/SAPx_verilog/SAP-1/SAP1_VIVADO_PROJECT/SAP1_VIVADO_PROJECT.sim/sim_1/behav/xsim/glbl.v,1715611316,verilog,,,,glbl,,,,,,,,
 /home/leo_mrmd/Documents/SAPx_verilog/SAP-1/SAP1_VIVADO_PROJECT/SAP1_VIVADO_PROJECT.srcs/sim_1/new/sap1_bench.v,1714661151,verilog,,,,sap1_bench,,,,,,,,
 /home/leo_mrmd/Documents/SAPx_verilog/SAP-1/modules/add_sub.v,1715611316,verilog,,/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/modules/bus_controller.v,,add_sub,,,,,,,,
-/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/modules/bus_controller.v,1714664050,verilog,,/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/modules/clock.v,,bus_controller,,,,,,,,
+/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/modules/bus_controller.v,1715611316,verilog,,/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/modules/clock.v,,bus_controller,,,,,,,,
 /home/leo_mrmd/Documents/SAPx_verilog/SAP-1/modules/clock.v,1714493028,verilog,,/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/modules/controller.v,,clock,,,,,,,,
 /home/leo_mrmd/Documents/SAPx_verilog/SAP-1/modules/controller.v,1714724987,verilog,,/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/modules/mar.v,,controller,,,,,,,,
 /home/leo_mrmd/Documents/SAPx_verilog/SAP-1/modules/mar.v,1714559330,verilog,,/home/leo_mrmd/Documents/SAPx_verilog/SAP-1/modules/pc.v,,mar,,,,,,,,

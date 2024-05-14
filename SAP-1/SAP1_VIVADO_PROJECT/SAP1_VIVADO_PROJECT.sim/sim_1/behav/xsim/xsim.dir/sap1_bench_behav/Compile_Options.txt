@@ -1,1 +1,1 @@
---incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "sap1_bench_behav" "xil_defaultlib.sap1_bench" "xil_defaultlib.glbl" -log "elaborate.log" 
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "sap1_bench_behav" "xil_defaultlib.sap1_bench" "xil_defaultlib.glbl" -log "elaborate.log" 

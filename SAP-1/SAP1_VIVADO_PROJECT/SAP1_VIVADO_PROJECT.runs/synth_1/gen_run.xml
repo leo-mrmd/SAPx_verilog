@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1715637160" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/sap1_top.dcp">
-  <File Type="VDS-TIMINGSUMMARY" Name="sap1_top_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="sap1_top.dcp"/>
   <File Type="RDS-UTIL-PB" Name="sap1_top_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="sap1_top_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="sap1_top_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="sap1_top.vds"/>
-  <File Type="REPORTS-TCL" Name="sap1_top_reports.tcl"/>
-  <File Type="VDS-TIMING-PB" Name="sap1_top_timing_summary_synth.pb"/>
   <File Type="PA-TCL" Name="sap1_top.tcl"/>
+  <File Type="RDS-UTIL" Name="sap1_top_utilization_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="sap1_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="sap1_top.vds"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../modules/add_sub.v">
