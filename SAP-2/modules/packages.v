@@ -90,7 +90,7 @@ localparam STATES_IN         = 10;
 localparam STATES_INR_A      = 4;
 localparam STATES_INR_B      = 4;
 localparam STATES_INR_C      = 4;
-localparam STATES_JM         = 10; 
+localparam STATES_JM         = 10; // Conditionnal jump instructions take 7 cycles if conditions are not met
 localparam STATES_JMP        = 10; 
 localparam STATES_JNZ        = 10; 
 localparam STATES_JZ         = 10; 
@@ -118,5 +118,6 @@ localparam STATES_SUB_C      = 4;
 localparam STATES_XRA_B      = 4;
 localparam STATES_XRA_C      = 4;
 localparam STATES_XRI        = 7;
+
 endmodule
 
